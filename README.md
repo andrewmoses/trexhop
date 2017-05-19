@@ -1,4 +1,4 @@
-# Trex Paseo
+# Trex Hop
 
 Multiplayer version of the t-rex game (chrome offline game)
 
