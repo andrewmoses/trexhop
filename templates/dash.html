@@ -1,8 +1,8 @@
 <html>
 <head>
 <title>dash</title>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+<script src="{{url_for('static', filename='js/jquery-2.1.1.min.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static', filename='js/socket.io.min.js')}}"></script>
 <script type=text/javascript>
     $(function() {
       $('a#start').bind('click', function() {
@@ -32,7 +32,7 @@
   var socket = io.connect('http://' + document.domain + ':' + location.port);
   $(document).ready(function () {
   //your code here
-  
+
       socket.on('connect', function() {
           socket.emit('my event', {Player: "admin da" });
       });
@@ -45,22 +45,22 @@
 
           div.innerHTML = div.innerHTML + '<br>'+msg;
 
-          
+
       });
 
-      
+
 
 
 
 });
-      
 
-     
+
+
 /*
       $(function() {
-      
-        
-        
+
+
+
       });
 */
   </script>
