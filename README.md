@@ -21,4 +21,4 @@ $ python start.py
 
 3. Ask other players to point to the system's ip address followed by their name http://<host_ipaddress>/<player_name> e.g. http://192.168.0.1:5000/andy. Note: Players should be in the same network.
 
-Have fun!
+Have fun!!
